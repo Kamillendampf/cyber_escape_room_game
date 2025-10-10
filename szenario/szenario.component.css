@@ -1,0 +1,51 @@
+/* Basis-Styling für das Terminal */
+.terminal-body {
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.terminal-output {
+  margin: 5px 0;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.command {
+  color: #00ff00;
+  cursor: pointer;
+}
+
+.command:hover {
+  color: #ff00ff;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff00ff;
+}
+
+.szenario-item {
+  margin-top: 10px;
+}
+
+.szenario-item p {
+  margin: 0;
+}
+
+button {
+  background-color: #00ff00;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+}
+
+button:hover {
+  background-color: #ff00ff;
+}

@@ -1,0 +1,41 @@
+.thank-you-container {
+  text-align: center;
+  margin: 10% auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  color: #ffd700;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.signature {
+  font-style: italic;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #aaa;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

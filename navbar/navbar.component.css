@@ -1,0 +1,33 @@
+.terminal-navbar {
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace; /* Terminal-Schriftart */
+  border-radius: 10px 10px 0 0; /* Abgerundete Ecken oben */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für einen leichten 3D-Effekt */
+}
+
+.tab-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.tab-item {
+  margin-right: 15px;
+  padding: 10px 15px;
+}
+
+.tab-item a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.tab-item:hover {
+  background-color: #1abc9c;
+}
+
+.tab-item a:hover {
+  color: #ecf0f1;
+}

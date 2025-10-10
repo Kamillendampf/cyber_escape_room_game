@@ -1,0 +1,99 @@
+<section class="terminal">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">root&#64;cyber-escape:~$</span>
+  </div>
+  <div class="terminal-body">
+    <p>┌──(player&#64;cyber-escape)-[~]</p>
+    <p>└─$ <span class="command">cat mission.txt</span></p>
+    <p class="output">Interaktive Escape Games direkt im Browser.</p>
+    <p class="output">Löse knifflige Rätsel, knacke Codes und infiltriere Firewalls.</p>
+    <p class="output">Sei für einen Abend <span class="highlight">Hacker</span>,
+      <span class="highlight">Ermittler</span>,
+      <span class="highlight">Profiler</span>,
+      <span class="highlight">Code-Breaker</span>.</p>
+
+    <p class="terminal-input">
+      <span class="prompt">┌──(player&#64;cyber-escape)-[~]</span><br>
+      <span class="prompt">└─$</span> <span class="cursor"></span>
+    </p>
+  </div>
+</section>
+
+<section class="terminal">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">root&#64;cyber-escape:~$</span>
+  </div>
+  <div class="terminal-body">
+    <p>┌──(player&#64;cyber-escape)-[~/latest_game]</p>
+    <p>└─$ <span class="command">systemctl status {{ latest_game_name }}</span></p>
+
+    <p class="output">
+      ● {{ latest_game_name }}.service - CyberSec Mission Control<br>
+      Loaded: <span class="highlight">loaded</span> (/usr/lib/systemd/system/{{ latest_game_name }}.service; enabled; preset: enabled)<br>
+      Active: <span class="status-active">active (running)</span> since {{ start_time }}; {{ uptime }} ago<br>
+      Main PID: <span class="highlight">{{ process_id }}</span> ({{ latest_game_name }})<br>
+      Tasks: <span class="highlight">4</span> (limit: 1024)<br>
+      Memory: <span class="highlight">256M</span><br>
+      CGroup: /system.slice/{{ latest_game_name }}.service<br>
+      ├─ <span class="highlight">{{ process_id }}</span> /bin/{{ latest_game_name }} --start<br>
+      ├─ <span class="highlight">{{ subprocess_1 }}</span> /usr/lib/crypto_engine --decrypt<br>
+      └─ <span class="highlight">{{ subprocess_2 }}</span> /usr/lib/social_engineering --init<br>
+    </p>
+
+    <p class="output">📡 **Mission:** {{mission}}</p>
+    <p class="output">🔐 **Features:** {{features}}</p>
+    <p class="output">🕵️ **Schwierigkeit:** {{ heaviness }}</p>
+    <p class="output">🔥 **Status:** <span class="status-active">LIVE</span> - Jetzt spielbar!</p>
+
+    <p class="output">📜 **Logs:**</p>
+    <p class="log">Mar 16 12:34:56 cyber-escape systemd[1]: Starting {{ latest_game_name }} service...</p>
+    <p class="log">Mar 16 12:34:57 cyber-escape {{ latest_game_name }}[{{ process_id }}]: Initializing security protocols...</p>
+    <p class="log">Mar 16 12:34:58 cyber-escape {{ latest_game_name }}[{{ process_id }}]: Connection to darkweb node established.</p>
+    <p class="log">Mar 16 12:34:59 cyber-escape systemd[1]: {{ latest_game_name }} service started successfully.</p>
+
+    <p class="terminal-input">
+      <span class="prompt">┌──(player&#64;cyber-escape)-[~/latest_game]</span><br>
+      <span class="prompt">└─$</span>
+      <button class="cta-button" (click)="toGameSide()">// CONNECT TO {{ latest_game_name.toUpperCase() }}</button>
+    </p>
+  </div>
+</section>
+
+<section class="terminal">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">root&#64;cyber-escape:~$</span>
+  </div>
+  <div class="terminal-body">
+    <p>┌──(player&#64;cyber-escape)-[~/game_setup]</p>
+    <p>└─$ <span class="command">cat game_guide.txt</span></p>
+
+    <p class="output">📜 **Spielprinzip:**</p>
+
+    <p>🎙 **Step 1:** Macht einen **Voice-Chat** auf</p>
+    <p class="output">→ Kommunikation ist der Schlüssel! Nutzt Discord, Teamspeak oder einen anderen Voice-Chat.</p>
+
+    <p>💻 **Step 2:** Entscheidet euch für eine **Programmiersprache**</p>
+    <p class="output">→ Python, JavaScript, C++ oder eine andere Sprache? Euer Code wird euer Werkzeug sein!</p>
+
+    <p>🚀 **Step 3:** Startet das Spiel</p>
+    <p class="output">→ Ihr erhaltet Zugriff auf die ersten Herausforderungen und müsst die ersten Codes entschlüsseln.</p>
+
+    <p>🧠 **Step 4:** Habt Spaß am **Coden und Rätsellösen**</p>
+    <p class="output">→ Findet Schwachstellen, knackt Verschlüsselungen und nutzt euren Verstand!</p>
+
+    <p class="terminal-input">
+      <span class="prompt">┌──(player&#64;cyber-escape)-[~/game_setup]</span><br>
+      <span class="prompt">└─$</span> <span class="cursor"></span>
+    </p>
+  </div>
+</section>
+

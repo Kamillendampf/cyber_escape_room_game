@@ -1,0 +1,22 @@
+<div class="terminal-body">
+  <p class="terminal-output">
+    <span class="prompt">┌──(player&#64;cyber-escape)-[~/szenarien]</span>
+  </p>
+  <p class="terminal-output">
+    <span class="prompt">└─$ <span >ls -R</span></span>
+  </p>
+
+  <!-- Durchlaufen der Szenarien und Anzeigen im Terminal-Stil -->
+  <div *ngFor="let szenario of szenarien" class="szenario-item">
+    <p class="terminal-output">
+      <span class="prompt"> szenario_{{ szenario.id }}/</span>
+    </p>
+    <p class="terminal-output">
+      <span class="command" (click)="goToSzenarioDetail(szenario.id)">
+        <br>
+        <span class="highlight">  └── {{ szenario.title }}</span> - {{ szenario.shortDescription }}
+      </span>
+    </p>
+  </div>
+
+</div>

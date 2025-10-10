@@ -1,0 +1,16 @@
+<div class="szenario-detail">
+  <div class="terminal-window">
+    <h1 class="terminal-title">{{ szenario.title }}</h1>
+    <div class="terminal-output">
+      <p><strong>Beschreibung:</strong> {{ szenario.description }}</p>
+      <p><strong>Features:</strong> {{ szenario.features }}</p>
+      <p><strong>Schwierigkeit:</strong> {{ szenario.difficulty }}</p>
+      <p><strong>Status:</strong> {{ szenario.status }}</p>
+    </div>
+
+    <!-- Button, um das Spiel zu starten -->
+    <div class="terminal-input">
+      <button class="cta-button" (click)="startGame()">Spiel starten</button>
+    </div>
+  </div>
+</div>

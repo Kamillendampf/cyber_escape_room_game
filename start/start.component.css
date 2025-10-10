@@ -1,0 +1,87 @@
+/* Terminal Hintergrund */
+.terminal {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: black;
+  color: #00ff00; /* Klassisches Terminal-Grün */
+  font-family: 'Courier New', monospace;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+/* Terminal-Header mit typischen Fenstertasten */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 5px 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.terminal-title {
+  margin-left: auto;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Terminal-Fenstertasten */
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  display: inline-block;
+}
+
+.red { background-color: #ff605c; }
+.yellow { background-color: #ffbd44; }
+.green { background-color: #00ca4e; }
+
+/* Terminal Body */
+.terminal-body {
+  padding: 15px;
+  min-height: 300px;
+  overflow-y: auto;
+}
+
+/* Terminal Prompt & Output */
+.prompt {
+  color: #00ff00;
+}
+
+.command {
+  color: #00ccff;
+}
+
+.output {
+  color: #ffffff;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+/* Terminal-Eingabe mit blinkendem Cursor */
+.terminal-input {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #00ff00;
+  width: 10px;
+  height: 18px;
+  animation: blink 0.8s infinite;
+}
+
+/* Blinken des Cursors */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
